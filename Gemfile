@@ -52,3 +52,5 @@ group :development, :test do
 end
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'kaminari'
+gem 'rails_12factor', group: :production
+ruby '2.0.0'
