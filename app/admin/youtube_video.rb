@@ -26,7 +26,8 @@ ActiveAdmin.register YoutubeVideo do
   end
 
   controller do
-
+    require 'net/http'
+    
     def create
       @youtube_video = YoutubeVideo.new
       response = nil
