@@ -66,7 +66,7 @@ ActiveAdmin.register YoutubeVideo do
           unless response.nil?
             code = response.code || code
           end
-          format.html { render action: "new", status: code }
+          format.html { redirect_to admin_youtube_videos_url }
           format.json { render json: @youtube_video.errors, status: code }
         end
       end 
@@ -78,7 +78,7 @@ ActiveAdmin.register YoutubeVideo do
       @youtube_video.destroy
 
       respond_to do |format|
-        format.html { render 'index' }
+        format.html { redirect_to admin_youtube_videos_url }
         format.json { head :no_content }
       end
     end

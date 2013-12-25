@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Phonix::Application.config.secret_key_base = '389f693a75afc54f0f175469241c5e18d6a2086a0a7e566494f4395e98b4b616db309929a6bbb42eb24a2bd4689972e9ff4dc555771f5c706483e9689851521c'
+PhoenixEdu::Application.config.secret_key_base = '389f693a75afc54f0f175469241c5e18d6a2086a0a7e566494f4395e98b4b616db309929a6bbb42eb24a2bd4689972e9ff4dc555771f5c706483e9689851521c'

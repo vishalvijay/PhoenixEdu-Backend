@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Phonix::Application.load_tasks
+PhoenixEdu::Application.load_tasks

@@ -1,4 +1,4 @@
-Phonix::Application.routes.draw do
+PhoenixEdu::Application.routes.draw do
   get "deleted_youtube_videos/index"
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
