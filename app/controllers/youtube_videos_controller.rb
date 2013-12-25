@@ -13,7 +13,7 @@ class YoutubeVideosController < InheritedResources::Base
 
 	def based_on_time(input)
 		if params[:time].present? and !input.nil?
-			input.where("updated_at > ?", CGI.unescape(params[:time])) 
+			input.where("updated_at > ?", params[:time])
 		else
 			input
 		end
